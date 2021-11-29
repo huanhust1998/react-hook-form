@@ -10,6 +10,8 @@ function Register(props) {
 
   /**
    * One of the key concepts in React Hook Form is to register
+   * register là một hàm dùng để đăng ký các field vào trong RHF
+   * register nhận vào name của field đó và trả về một Object={name, onChange, onBlur, ref}
    *  */
 
   return (

@@ -18,7 +18,7 @@ function IntegratingUI(props) {
       <Controller
         name="firstName"
         control={control}
-        render={({ field }) => <Input {...field} />}
+        render={({ field }) => <Input {...field} onChange={()=>console.log(field)}/>}
       />
 
       <Controller

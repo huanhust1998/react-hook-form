@@ -5,6 +5,8 @@ import Register from "./form-submit/Register";
 import ApplyValidation from "./form-submit/ApplyValidation";
 import IntegratingExistingForm from "./form-submit/IntegratingExistingForm";
 import IntegratingUI from "./form-submit/IntegratingUI";
+import HandleErrors from "./form-submit/HandleErrors";
+import SchemaValidation from "./form-submit/SchemaValidation";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
             component={IntegratingExistingForm}
           />
           <Route path="/UI-libraries" exact component={IntegratingUI} />
+          <Route path="/handle-errors" exact component={HandleErrors} />
+          <Route path="/schema-validate" exact component={SchemaValidation} />
         </Switch>
       </BrowserRouter>
     </div>
