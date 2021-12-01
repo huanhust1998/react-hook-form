@@ -1,10 +1,8 @@
-import { Table, TableCell, TableRow, TextField, Box } from "@material-ui/core";
+import {Box, Table, TableCell, TableRow, TextField} from "@material-ui/core";
 import React from "react";
-import { Controller, useForm } from "react-hook-form";
+import {Controller, useForm} from "react-hook-form";
 import * as yup from "yup";
-import { yupResolver } from "@hookform/resolvers/yup";
-import { DateTimePicker, MuiPickersUtilsProvider } from "@material-ui/pickers";
-import DateFnsUtils from '@date-io/date-fns';
+import {yupResolver} from "@hookform/resolvers/yup";
 
 const schema = yup.object().shape({
   name: yup.string().required("Error!"),
@@ -46,24 +44,10 @@ function FormValidateDemo(props) {
                     variant="outlined"
                     fullWidth
                     required
-                    inputProps={{
-                      maxLength: 10,
-                    }}
                   />
                 )}
                 rules={{ required: true }}
               />
-            </TableCell>
-          </TableRow>
-          <TableRow>
-            <TableCell>Date</TableCell>
-            <TableCell>
-              <MuiPickersUtilsProvider utils={DateFnsUtils}>
-                <DateTimePicker
-                  label="DateTimePicker"
-                  inputVariant="outlined"
-                />
-              </MuiPickersUtilsProvider>
             </TableCell>
           </TableRow>
         </Table>

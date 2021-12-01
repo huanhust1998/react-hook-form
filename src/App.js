@@ -13,6 +13,7 @@ import FormValidateDemo from "./form-submit-get-started/FormValidateDemo";
 function App() {
   return (
     <div className="App">
+
       <BrowserRouter>
         <Switch>
           <Route path="/" exact component={ListComponent} />
@@ -33,6 +34,7 @@ function App() {
           />
         </Switch>
       </BrowserRouter>
+
     </div>
   );
 }
