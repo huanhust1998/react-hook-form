@@ -14,7 +14,7 @@ const defaultValues = {
 
 function FormValidateDemo(props) {
   const { control, formState, handleSubmit } = useForm({
-    mode: "onChange",
+    mode: "onSubmit",
     defaultValues,
     resolver: yupResolver(schema),
   });
@@ -51,6 +51,7 @@ function FormValidateDemo(props) {
             </TableCell>
           </TableRow>
         </Table>
+        <input type="submit" label="Submit"/>
       </form>
     </Box>
   );
