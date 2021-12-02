@@ -11,6 +11,7 @@ function ListComponent(props) {
       <a href="/handle-errors">Handle Errors</a>
       <a href="/schema-validate">Schema Validate</a>
       <a href="/form-validate-demo">Validate form demo</a>
+      <a href="/form-criteriaMode">Criteria Mode</a>
     </div>
   );
 }

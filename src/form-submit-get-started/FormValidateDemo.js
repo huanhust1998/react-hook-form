@@ -5,7 +5,7 @@ import * as yup from "yup";
 import {yupResolver} from "@hookform/resolvers/yup";
 
 const schema = yup.object().shape({
-  name: yup.string().required("Error!"),
+  name: yup.string().required("Error!").min(5,"Min 5").max(10,"Max 10"),
 });
 
 const defaultValues = {
@@ -14,8 +14,8 @@ const defaultValues = {
 
 function FormValidateDemo(props) {
   const { control, formState, handleSubmit } = useForm({
-    mode: "onSubmit",
     defaultValues,
+    criteriaMode:"all",
     resolver: yupResolver(schema),
   });
   const { isValid, dirtyFields, errors } = formState;

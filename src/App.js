@@ -9,6 +9,7 @@ import HandleErrors from "./form-submit-get-started/HandleErrors";
 import SchemaValidation from "./form-submit-get-started/SchemaValidation";
 import ListComponent from "./form-submit-get-started/ListComponent";
 import FormValidateDemo from "./form-submit-get-started/FormValidateDemo";
+import UseForm_criteriaMode from "./form-API/UseForm_criteriaMode";
 
 function App() {
   return (
@@ -31,6 +32,11 @@ function App() {
             path="/form-validate-demo"
             exact
             component={FormValidateDemo}
+          />
+          <Route
+            path="/form-criteriaMode"
+            exact
+            component={UseForm_criteriaMode}
           />
         </Switch>
       </BrowserRouter>
