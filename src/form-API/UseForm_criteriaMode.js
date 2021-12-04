@@ -35,6 +35,7 @@ function UseForm_criteriaMode(props) {
       {errors?.password?.types?.minLength && <p>password minLength 10</p>}
       {errors?.password?.types?.pattern && <p>password number only</p>}
 
+
       <input type="submit" />
     </form>
   );

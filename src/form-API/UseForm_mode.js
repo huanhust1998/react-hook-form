@@ -1,6 +1,5 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-
 function UseForm_mode(props) {
   /* *
     - useForm is custom hook for managing forms with ease

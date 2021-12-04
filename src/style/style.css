@@ -1,4 +1,9 @@
-a{
-    display: block;
-    margin: 1rem;
+a {
+  display: block;
+  margin: 1rem;
+}
+
+input {
+  display: block;
+  margin: 1rem;
 }
