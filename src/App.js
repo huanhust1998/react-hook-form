@@ -12,6 +12,7 @@ import FormValidateDemo from "./form-submit-get-started/FormValidateDemo";
 import UseForm_criteriaMode from "./form-API/UseForm_criteriaMode";
 import { Button } from "@material-ui/core";
 import UserForm_Register from "./form-API/UserForm_Register";
+import RegisterForm_MaterialUI from './form-API/RegisterForm_MaterialUI';
 
 function App() {
   return (
@@ -51,6 +52,11 @@ function App() {
             path="/form-register"
             exact
             component={UserForm_Register}
+          />
+          <Route
+            path="/form-register-materialUI"
+            exact
+            component={RegisterForm_MaterialUI}
           />
         </Switch>
       </BrowserRouter>
